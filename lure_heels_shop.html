@@ -1451,6 +1451,39 @@
       </div>
     </div>
 
+    <!-- GITHUB SETTINGS -->
+    <div class="settings-card">
+      <div class="settings-title">🐙 GitHub сақтау баптаулары</div>
+      <div class="settings-row" style="align-items:flex-end;">
+        <div class="settings-field">
+          <label>GitHub Token</label>
+          <input type="password" id="github-token" placeholder="ghp_...">
+        </div>
+        <button class="save-settings-btn" onclick="saveGitHubSettings()">Сақтау ✓</button>
+      </div>
+      <div class="add-product-grid" style="margin-top:0.75rem;">
+        <div class="settings-field">
+          <label>Owner</label>
+          <input type="text" id="github-owner" value="zake3">
+        </div>
+        <div class="settings-field">
+          <label>Repo</label>
+          <input type="text" id="github-repo" value="Di">
+        </div>
+        <div class="settings-field">
+          <label>Branch</label>
+          <input type="text" id="github-branch" value="main">
+        </div>
+        <div class="settings-field">
+          <label>Products file</label>
+          <input type="text" id="github-products-path" value="products.json">
+        </div>
+      </div>
+      <div class="settings-note">
+        💡 Тауарлар products.json файлына, фотолар assets/products ішіне сақталады. Token браузерде localStorage ішінде сақталады.
+      </div>
+    </div>
+
     <!-- ADD PRODUCT -->
     <div class="add-product-card">
       <div class="settings-title">➕ Жаңа тауар қосу</div>
@@ -1593,6 +1626,167 @@ var cart = [];
 var currentCat = 'Барлығы';
 var saleOnly = false;
 var nextId = 33;
+var PRODUCTS_FILE = 'products.json';
+var PRODUCT_ASSETS_DIR = 'assets/products';
+var GITHUB_OWNER = 'zake3';
+var GITHUB_REPO = 'Di';
+var GITHUB_BRANCH = 'main';
+var GITHUB_TOKEN = '';
+
+function syncNextId() {
+  nextId = products.length ? Math.max.apply(null, products.map(function(p){ return p.id || 0; })) + 1 : 1;
+}
+
+function loadGitHubSettings() {
+  try {
+    GITHUB_TOKEN = localStorage.getItem('lure_github_token') || GITHUB_TOKEN;
+    GITHUB_OWNER = localStorage.getItem('lure_github_owner') || GITHUB_OWNER;
+    GITHUB_REPO = localStorage.getItem('lure_github_repo') || GITHUB_REPO;
+    GITHUB_BRANCH = localStorage.getItem('lure_github_branch') || GITHUB_BRANCH;
+    PRODUCTS_FILE = localStorage.getItem('lure_github_products_path') || PRODUCTS_FILE;
+  } catch(e) {}
+
+  var tokenEl = document.getElementById('github-token');
+  var ownerEl = document.getElementById('github-owner');
+  var repoEl = document.getElementById('github-repo');
+  var branchEl = document.getElementById('github-branch');
+  var pathEl = document.getElementById('github-products-path');
+  if(tokenEl) tokenEl.value = GITHUB_TOKEN;
+  if(ownerEl) ownerEl.value = GITHUB_OWNER;
+  if(repoEl) repoEl.value = GITHUB_REPO;
+  if(branchEl) branchEl.value = GITHUB_BRANCH;
+  if(pathEl) pathEl.value = PRODUCTS_FILE;
+}
+
+function readGitHubSettingsFromForm() {
+  var tokenEl = document.getElementById('github-token');
+  if(!tokenEl) return false;
+  GITHUB_TOKEN = tokenEl.value.trim();
+  GITHUB_OWNER = (document.getElementById('github-owner')||{value:'zake3'}).value.trim() || 'zake3';
+  GITHUB_REPO = (document.getElementById('github-repo')||{value:'Di'}).value.trim() || 'Di';
+  GITHUB_BRANCH = (document.getElementById('github-branch')||{value:'main'}).value.trim() || 'main';
+  PRODUCTS_FILE = (document.getElementById('github-products-path')||{value:'products.json'}).value.trim() || 'products.json';
+  return true;
+}
+
+function saveGitHubSettings() {
+  readGitHubSettingsFromForm();
+  try {
+    localStorage.setItem('lure_github_token', GITHUB_TOKEN);
+    localStorage.setItem('lure_github_owner', GITHUB_OWNER);
+    localStorage.setItem('lure_github_repo', GITHUB_REPO);
+    localStorage.setItem('lure_github_branch', GITHUB_BRANCH);
+    localStorage.setItem('lure_github_products_path', PRODUCTS_FILE);
+  } catch(e) {}
+  showToast('✅ GitHub баптаулары сақталды!');
+}
+
+function requireGitHubToken() {
+  if(!readGitHubSettingsFromForm()) loadGitHubSettings();
+  if(!GITHUB_TOKEN) {
+    throw new Error('GitHub Token енгізіңіз');
+  }
+}
+
+function encodeBase64(str) {
+  var bytes = new TextEncoder().encode(str);
+  var binary = '';
+  bytes.forEach(function(b){ binary += String.fromCharCode(b); });
+  return btoa(binary);
+}
+
+function decodeBase64(str) {
+  var binary = atob(str.replace(/\n/g, ''));
+  var bytes = new Uint8Array(binary.length);
+  for(var i=0;i<binary.length;i++) bytes[i] = binary.charCodeAt(i);
+  return new TextDecoder().decode(bytes);
+}
+
+async function githubRequest(path, options) {
+  var r = await fetch('https://api.github.com/repos/'+encodeURIComponent(GITHUB_OWNER)+'/'+encodeURIComponent(GITHUB_REPO)+path, Object.assign({
+    headers: {
+      'Accept': 'application/vnd.github+json',
+      'Authorization': 'Bearer '+GITHUB_TOKEN,
+      'X-GitHub-Api-Version': '2022-11-28'
+    }
+  }, options || {}));
+  var text = await r.text();
+  var data = text ? JSON.parse(text) : {};
+  if(!r.ok) {
+    throw new Error((data && data.message) ? data.message : ('GitHub API error '+r.status));
+  }
+  return data;
+}
+
+async function getGitHubFile(path) {
+  return githubRequest('/contents/'+encodeURIComponent(path).replace(/%2F/g,'/')+'?ref='+encodeURIComponent(GITHUB_BRANCH));
+}
+
+async function putGitHubFile(path, base64Content, message, sha) {
+  var body = {
+    message: message,
+    content: base64Content,
+    branch: GITHUB_BRANCH
+  };
+  if(sha) body.sha = sha;
+  return githubRequest('/contents/'+encodeURIComponent(path).replace(/%2F/g,'/'), {
+    method: 'PUT',
+    headers: {
+      'Accept': 'application/vnd.github+json',
+      'Authorization': 'Bearer '+GITHUB_TOKEN,
+      'X-GitHub-Api-Version': '2022-11-28',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body)
+  });
+}
+
+async function loadProductsFromJson() {
+  try {
+    var r = await fetch(PRODUCTS_FILE + '?v=' + Date.now(), { cache: 'no-store' });
+    if(!r.ok) throw new Error('products.json '+r.status);
+    var arr = await r.json();
+    if(Array.isArray(arr) && arr.length) {
+      products = arr;
+      syncNextId();
+      renderProducts();
+      if(document.getElementById('pg-admin').classList.contains('active')) renderAdminProducts();
+    }
+  } catch(e) {
+    console.warn('products.json load failed, using embedded products', e);
+    syncNextId();
+  }
+}
+
+async function saveProductsToGitHub(message) {
+  requireGitHubToken();
+  var current = await getGitHubFile(PRODUCTS_FILE);
+  var clean = products.map(function(p) {
+    var copy = Object.assign({}, p);
+    if(copy.img && copy.img.startsWith('data:')) copy.img = '';
+    return copy;
+  });
+  await putGitHubFile(PRODUCTS_FILE, encodeBase64(JSON.stringify(clean, null, 2) + '\n'), message, current.sha);
+}
+
+function fileExtFromDataUrl(dataUrl) {
+  var m = dataUrl.match(/^data:image\/([a-zA-Z0-9+.-]+);base64,/);
+  if(!m) return 'jpg';
+  var type = m[1].toLowerCase();
+  if(type === 'jpeg') return 'jpg';
+  if(type === 'svg+xml') return 'svg';
+  return type;
+}
+
+async function uploadProductPhotoIfNeeded(product) {
+  if(!product.img || !product.img.startsWith('data:')) return product.img || '';
+  requireGitHubToken();
+  var ext = fileExtFromDataUrl(product.img);
+  var base64 = product.img.split(',')[1];
+  var path = PRODUCT_ASSETS_DIR + '/' + product.id + '-' + Date.now() + '.' + ext;
+  await putGitHubFile(path, base64, 'chore: upload product photo '+product.id);
+  return path;
+}
 
 // ===== NAVIGATION =====
 function showPage(id) {
@@ -1603,6 +1797,7 @@ function showPage(id) {
 function goPage(id) {
   if(id==='pg-cart') renderCart();
   if(id==='pg-admin') {
+    loadGitHubSettings();
     renderAdminProducts();
     renderAdminReviews();
     document.getElementById('tg-chatid').value = TG_CHAT_ID;
@@ -1833,6 +2028,7 @@ async function addProduct() {
   var name = document.getElementById('new-name').value.trim();
   var price = parseFloat(document.getElementById('new-price').value);
   if(!name || !price) { showToast('⚠️ Атауы мен бағасын толтырыңыз!'); return; }
+  var before = JSON.stringify(products);
   var p = {
     id: nextId++,
     name: name,
@@ -1842,25 +2038,49 @@ async function addProduct() {
     img: document.getElementById('new-img').value.trim(),
     sale: document.getElementById('new-sale').value === 'true'
   };
-  products.unshift(p);
-  document.getElementById('new-name').value = '';
-  document.getElementById('new-price').value = '';
-  clearPhoto('new-img-file','new-photo-preview','new-img');
-  renderAdminProducts();
-  renderProducts();
-  showToast('⏳ Сақталуда...');
-  await pushReviews();
-  showToast('✅ Тауар қосылды және сақталды!');
+  try {
+    requireGitHubToken();
+    showToast('⏳ GitHub-қа сақталуда...');
+    p.img = await uploadProductPhotoIfNeeded(p);
+    products.unshift(p);
+    syncNextId();
+    renderAdminProducts();
+    renderProducts();
+    await saveProductsToGitHub('feat: add product '+p.name);
+    document.getElementById('new-name').value = '';
+    document.getElementById('new-price').value = '';
+    clearPhoto('new-img-file','new-photo-preview','new-img');
+    showToast('✅ Тауар GitHub-қа сақталды!');
+  } catch(e) {
+    products = JSON.parse(before);
+    syncNextId();
+    renderAdminProducts();
+    renderProducts();
+    console.error('addProduct error:', e);
+    showToast('❌ '+e.message);
+  }
 }
 
 async function deleteProduct(id) {
   if(!confirm('Тауарды жоюға сенімдісіз бе?')) return;
-  products = products.filter(p => p.id !== id);
-  renderAdminProducts();
-  renderProducts();
-  showToast('⏳ Сақталуда...');
-  await pushReviews();
-  showToast('🗑️ Тауар жойылды');
+  var before = JSON.stringify(products);
+  try {
+    requireGitHubToken();
+    products = products.filter(p => p.id !== id);
+    syncNextId();
+    renderAdminProducts();
+    renderProducts();
+    showToast('⏳ GitHub-қа сақталуда...');
+    await saveProductsToGitHub('fix: delete product '+id);
+    showToast('🗑️ Тауар жойылды');
+  } catch(e) {
+    products = JSON.parse(before);
+    syncNextId();
+    renderAdminProducts();
+    renderProducts();
+    console.error('deleteProduct error:', e);
+    showToast('❌ '+e.message);
+  }
 }
 
 function openEdit(id) {
@@ -1895,21 +2115,33 @@ async function saveEdit() {
   var id = parseInt(document.getElementById('edit-id').value);
   var p = products.find(x => x.id===id);
   if(!p) return;
-  p.name = document.getElementById('edit-name').value.trim();
-  p.price = parseFloat(document.getElementById('edit-price').value) || p.price;
-  p.cat = document.getElementById('edit-cat').value;
-  p.emoji = document.getElementById('edit-emoji').value || p.emoji;
-  p.img = document.getElementById('edit-img').value.trim();
-  p.sale = document.getElementById('edit-sale').value === 'true';
-  // Save available sizes
-  var checkedChips = document.querySelectorAll('#edit-sizes-stock .size-stock-chip.checked');
-  p.availableSizes = Array.from(checkedChips).map(function(c){ return c.dataset.size; });
-  closeModal();
-  renderAdminProducts();
-  renderProducts();
-  showToast('⏳ Сақталуда...');
-  await pushReviews();
-  showToast('✅ Тауар жаңартылды және сақталды!');
+  var before = JSON.stringify(products);
+  try {
+    requireGitHubToken();
+    p.name = document.getElementById('edit-name').value.trim();
+    p.price = parseFloat(document.getElementById('edit-price').value) || p.price;
+    p.cat = document.getElementById('edit-cat').value;
+    p.emoji = document.getElementById('edit-emoji').value || p.emoji;
+    p.img = document.getElementById('edit-img').value.trim();
+    p.sale = document.getElementById('edit-sale').value === 'true';
+    var checkedChips = document.querySelectorAll('#edit-sizes-stock .size-stock-chip.checked');
+    p.availableSizes = Array.from(checkedChips).map(function(c){ return c.dataset.size; });
+    showToast('⏳ GitHub-қа сақталуда...');
+    p.img = await uploadProductPhotoIfNeeded(p);
+    syncNextId();
+    renderAdminProducts();
+    renderProducts();
+    await saveProductsToGitHub('fix: update product '+p.id);
+    closeModal();
+    showToast('✅ Тауар GitHub-қа жаңартылды!');
+  } catch(e) {
+    products = JSON.parse(before);
+    syncNextId();
+    renderAdminProducts();
+    renderProducts();
+    console.error('saveEdit error:', e);
+    showToast('❌ '+e.message);
+  }
 }
 
 document.getElementById('edit-modal').addEventListener('click', function(e) {
@@ -2032,44 +2264,21 @@ var reviewsLoaded = false;
 // --- localStorage резерв ---
 function saveLocal() {
   try {
-    var photos = {};
-    var prods = products.map(function(p) {
-      var copy = Object.assign({}, p);
-      if(copy.img && copy.img.startsWith('data:')) {
-        photos[p.id] = copy.img;
-        copy.img = '__photo__';
-      }
-      return copy;
-    });
-    localStorage.setItem('lure_products', JSON.stringify(prods));
-    localStorage.setItem('lure_photos', JSON.stringify(photos));
     localStorage.setItem('lure_reviews', JSON.stringify(allReviews));
-    localStorage.setItem('lure_nextid', nextId);
-    // Всегда сохраняем Chat ID локально
     if(TG_CHAT_ID) localStorage.setItem('lure_tg_chatid', TG_CHAT_ID);
   } catch(e) {}
 }
 
 function loadLocal() {
   try {
-    var p = localStorage.getItem('lure_products');
-    if(p) {
-      var arr = JSON.parse(p);
-      if(arr && arr.length) {
-        var photos = JSON.parse(localStorage.getItem('lure_photos') || '{}');
-        arr.forEach(function(prod) {
-          if(prod.img === '__photo__' && photos[prod.id]) prod.img = photos[prod.id];
-          else if(prod.img && prod.img.startsWith('jsonbin:')) prod.img = '';
-        });
-        products = arr;
-        nextId = parseInt(localStorage.getItem('lure_nextid') || '1') || Math.max.apply(null, products.map(x=>x.id)) + 1;
-      }
-    }
+    localStorage.removeItem('lure_products');
+    localStorage.removeItem('lure_photos');
+    localStorage.removeItem('lure_nextid');
     var rv = localStorage.getItem('lure_reviews');
     if(rv) allReviews = JSON.parse(rv) || {};
-    // Загружаем Chat ID из localStorage (резервная копия)
     var savedChatId = localStorage.getItem('lure_tg_chatid');
     if(savedChatId && !TG_CHAT_ID) TG_CHAT_ID = savedChatId;
+    loadGitHubSettings();
   } catch(e) {}
 }
 
@@ -2091,19 +2300,6 @@ async function fetchReviews() {
       TG_CHAT_ID = rec.__settings.chatId;
     }
 
-    if(rec.__products && rec.__products.length) {
-      products = rec.__products;
-      var photos = rec.__photos || {};
-      products.forEach(function(p) {
-        if(p.img === '__photo__' && photos[p.id]) {
-          p.img = photos[p.id];
-        } else if(p.img && p.img.startsWith('jsonbin:')) {
-          p.img = '';
-        }
-      });
-      nextId = Math.max.apply(null, products.map(p=>p.id)) + 1;
-    }
-
     allReviews = {};
     Object.keys(rec).forEach(function(k) {
       if(k !== '__settings' && k !== '__products' && k !== '__photos') allReviews[k] = rec[k];
@@ -2120,19 +2316,7 @@ async function pushReviews() {
   _initSecrets();
   if(!JSONBIN_KEY || !JSONBIN_BIN) return;
   try {
-    var photos = {};
-    var productsNoPhoto = products.map(function(p) {
-      var copy = Object.assign({}, p);
-      if(copy.img && copy.img.startsWith('data:')) {
-        photos[p.id] = copy.img;
-        copy.img = '__photo__';
-      }
-      return copy;
-    });
-
     var data = Object.assign({}, allReviews);
-    data.__products = productsNoPhoto;
-    data.__photos = photos;
     if(TG_CHAT_ID) data.__settings = { chatId: TG_CHAT_ID };
 
     await fetch('https://api.jsonbin.io/v3/b/'+JSONBIN_BIN, {
@@ -2248,7 +2432,9 @@ function escHtml(s) {
 // Init — сначала localStorage (быстро), потом облако (синхронизация)
 _initSecrets();
 loadLocal();
+syncNextId();
 renderProducts();
+loadProductsFromJson();
 fetchReviews().then(function() { renderProducts(); });
 
 // ===== TRANSLATIONS =====
@@ -2711,28 +2897,18 @@ function compressImage(file) {
       var img = new Image();
       img.onload = function() {
         var canvas = document.createElement('canvas');
-        var MAX = 400; // уменьшено до 400px чтобы влезать в JSONBin лимит
+        var MAX = 1200;
         var w = img.width, h = img.height;
         if(w > MAX) { h = Math.round(h * MAX / w); w = MAX; }
         if(h > MAX) { w = Math.round(w * MAX / h); h = MAX; }
         canvas.width = w; canvas.height = h;
         canvas.getContext('2d').drawImage(img, 0, 0, w, h);
-        resolve(canvas.toDataURL('image/jpeg', 0.4)); // качество 40%
+        resolve(canvas.toDataURL('image/jpeg', 0.82));
       };
       img.src = e.target.result;
     };
     reader.readAsDataURL(file);
   });
-}
-
-async function uploadPhotoToJsonBin(base64data) {
-  return base64data; // фото хранится прямо в товаре
-}
-
-var _imgCache = {};
-async function resolveImgSrc(src) {
-  // Фото хранится как base64 прямо в товаре — просто возвращаем
-  return src || '';
 }
 
 async function previewPhoto(input, previewId, hiddenId) {
@@ -2745,7 +2921,6 @@ async function previewPhoto(input, previewId, hiddenId) {
   previewEl.innerHTML = '<div class="photo-uploading"><span class="spin">⏳</span> Жүктелуде...</div>';
   try {
     var compressed = await compressImage(file);
-    // Сохраняем base64 прямо в hidden поле — оно сохранится в товаре в JSONBin
     hiddenEl.value = compressed;
     previewEl.innerHTML = '';
     var imgTag = document.createElement('img');
