@@ -1,5 +1,14 @@
 [
   {
+    "id": 36,
+    "name": "Колготки «Rose» коричневые",
+    "price": 1990,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/36-1783793672720.jpg",
+    "sale": false
+  },
+  {
     "id": 35,
     "name": "Колготки «Rose» бордовые",
     "price": 1990,
