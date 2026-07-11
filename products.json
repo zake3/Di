@@ -291,14 +291,5 @@
     "emoji": "👗",
     "sale": false,
     "img": ""
-  },
-  {
-    "id": 25,
-    "name": "Туника белый",
-    "price": 9000,
-    "cat": "Киім",
-    "emoji": "👚",
-    "sale": false,
-    "img": ""
   }
 ]
