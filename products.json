@@ -219,14 +219,5 @@
     "emoji": "👗",
     "sale": false,
     "img": ""
-  },
-  {
-    "id": 15,
-    "name": "Комплект топ через шею + шорты push-up",
-    "price": 13000,
-    "cat": "Комплект",
-    "emoji": "🩱",
-    "sale": false,
-    "img": ""
   }
 ]
