@@ -192,14 +192,5 @@
     "emoji": "🩱",
     "sale": true,
     "img": ""
-  },
-  {
-    "id": 12,
-    "name": "Комплект белье Boyko лео",
-    "price": 9900,
-    "cat": "Комплект",
-    "emoji": "👙",
-    "sale": false,
-    "img": ""
   }
 ]
