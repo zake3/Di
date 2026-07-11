@@ -1,12 +1,20 @@
 [
   {
     "id": 38,
-    "name": "Колготки «Паутинка» красный",
+    "name": "Колготки «Паутинка» красные",
     "price": 1990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/38-1783796195290.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
   },
   {
     "id": 37,
