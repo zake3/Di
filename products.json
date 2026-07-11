@@ -19,19 +19,17 @@
   },
   {
     "id": 34,
-    "name": "Колготки «Паутинка» черные",
+    "name": "Колготки «Rose» черные",
     "price": 1990,
     "cat": "Киім",
     "emoji": "👗",
-    "img": "assets/products/34-1783793282647.jpg",
+    "img": "assets/products/34-1783796004087.jpg",
     "sale": false,
     "availableSizes": [
-      "36",
-      "37",
-      "38",
-      "39",
-      "40",
-      "41"
+      "XS",
+      "S",
+      "M",
+      "L"
     ]
   },
   {
