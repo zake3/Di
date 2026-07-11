@@ -273,14 +273,5 @@
     "emoji": "👗",
     "sale": true,
     "img": ""
-  },
-  {
-    "id": 23,
-    "name": "Платье Tyia Style коричневый",
-    "price": 12000,
-    "cat": "Платье",
-    "emoji": "👗",
-    "sale": false,
-    "img": ""
   }
 ]
