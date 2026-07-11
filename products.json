@@ -255,14 +255,5 @@
     "emoji": "👕",
     "sale": false,
     "img": ""
-  },
-  {
-    "id": 20,
-    "name": "Лосины клеш черный",
-    "price": 8900,
-    "cat": "Киім",
-    "emoji": "🩳",
-    "sale": false,
-    "img": ""
   }
 ]
