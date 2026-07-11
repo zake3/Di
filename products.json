@@ -264,14 +264,5 @@
     "emoji": "👗",
     "sale": false,
     "img": ""
-  },
-  {
-    "id": 22,
-    "name": "Платье Tyia style голубой",
-    "price": 5900,
-    "cat": "Платье",
-    "emoji": "👗",
-    "sale": true,
-    "img": ""
   }
 ]
