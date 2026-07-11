@@ -300,14 +300,5 @@
     "emoji": "👚",
     "sale": false,
     "img": ""
-  },
-  {
-    "id": 26,
-    "name": "Сертификат",
-    "price": 40000,
-    "cat": "Сертификат",
-    "emoji": "🎁",
-    "sale": false,
-    "img": ""
   }
 ]
