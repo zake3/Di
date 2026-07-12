@@ -1,5 +1,14 @@
 [
   {
+    "id": 46,
+    "name": "Наколенники бежевые",
+    "price": 4000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/46-1783853362432.jpg",
+    "sale": false
+  },
+  {
     "id": 45,
     "name": "Наколенники «Stealth» черные",
     "price": 4000,
