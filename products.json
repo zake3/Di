@@ -138,14 +138,5 @@
     "emoji": "👗",
     "sale": false,
     "img": ""
-  },
-  {
-    "id": 6,
-    "name": "Бандо черное",
-    "price": 6000,
-    "cat": "Бандо",
-    "emoji": "👗",
-    "sale": false,
-    "img": ""
   }
 ]
