@@ -1,5 +1,14 @@
 [
   {
+    "id": 45,
+    "name": "Наколенники «Stealth» черные",
+    "price": 4000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/45-1783853291416.jpg",
+    "sale": false
+  },
+  {
     "id": 44,
     "name": "Наколенники черные",
     "price": 2000,
