@@ -147,14 +147,5 @@
     "emoji": "👗",
     "sale": false,
     "img": ""
-  },
-  {
-    "id": 7,
-    "name": "Бра базовое кофейный",
-    "price": 4500,
-    "cat": "Бра",
-    "emoji": "👙",
-    "sale": false,
-    "img": ""
   }
 ]
