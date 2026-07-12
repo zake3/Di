@@ -165,14 +165,5 @@
     "emoji": "👙",
     "sale": false,
     "img": ""
-  },
-  {
-    "id": 9,
-    "name": "Бра базовое черный",
-    "price": 4500,
-    "cat": "Бра",
-    "emoji": "👙",
-    "sale": false,
-    "img": ""
   }
 ]
