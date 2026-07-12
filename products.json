@@ -1,5 +1,14 @@
 [
   {
+    "id": 49,
+    "name": "Сертификат",
+    "price": 40000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/49-1783866541064.jpg",
+    "sale": false
+  },
+  {
     "id": 48,
     "name": "Сумка «Blush Python»",
     "price": 7500,
