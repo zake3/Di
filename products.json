@@ -1,5 +1,14 @@
 [
   {
+    "id": 48,
+    "name": "Сумка «Blush Python»",
+    "price": 7500,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/48-1783866272547.jpg",
+    "sale": false
+  },
+  {
     "id": 47,
     "name": "Наколенники бежевые",
     "price": 5000,
