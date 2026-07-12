@@ -156,14 +156,5 @@
     "emoji": "👙",
     "sale": false,
     "img": ""
-  },
-  {
-    "id": 8,
-    "name": "Бра базовое красный",
-    "price": 4500,
-    "cat": "Бра",
-    "emoji": "👙",
-    "sale": false,
-    "img": ""
   }
 ]
