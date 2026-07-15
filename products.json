@@ -1,5 +1,14 @@
 [
   {
+    "id": 56,
+    "name": "Шорты « X-Strap »",
+    "price": 2000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/56-1784153522999.jpg",
+    "sale": true
+  },
+  {
     "id": 55,
     "name": "Шорты «Tempt Line»",
     "price": 5500,
