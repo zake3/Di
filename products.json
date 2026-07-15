@@ -1,5 +1,14 @@
 [
   {
+    "id": 55,
+    "name": "Шорты «Tempt Line»",
+    "price": 5500,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/55-1784153331377.jpg",
+    "sale": false
+  },
+  {
     "id": 54,
     "name": "Рукава голубые",
     "price": 1000,
