@@ -1,5 +1,14 @@
 [
   {
+    "id": 50,
+    "name": "Guard надкаблучники",
+    "price": 1000,
+    "cat": "Аяқ киім",
+    "emoji": "👗",
+    "img": "assets/products/50-1784152613577.jpg",
+    "sale": false
+  },
+  {
     "id": 49,
     "name": "Сертификат",
     "price": 40000,
