@@ -1,5 +1,14 @@
 [
   {
+    "id": 51,
+    "name": "Рукава розовые",
+    "price": 3000,
+    "cat": "Лонгслив",
+    "emoji": "👗",
+    "img": "assets/products/51-1784152974234.jpg",
+    "sale": false
+  },
+  {
     "id": 50,
     "name": "Guard надкаблучники",
     "price": 1000,
