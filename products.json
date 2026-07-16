@@ -1,5 +1,14 @@
 [
   {
+    "id": 70,
+    "name": "Леггинсы \"Curve\" черные",
+    "price": 7000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/70-1784185307720.jpg",
+    "sale": false
+  },
+  {
     "id": 69,
     "name": "Леггинсы- клеш «Sculpt» черные",
     "price": 7500,
