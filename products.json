@@ -1,16 +1,21 @@
 [
   {
+    "id": 66,
+    "name": "Шорты «Cloud» черные",
+    "price": 4000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/66-1784184030295.jpg",
+    "sale": false
+  },
+  {
     "id": 65,
-    "name": "Шорты «Pure» черные",
+    "name": "Шорты «Pure» черныЕ",
     "price": 6500,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/65-1784183370681.jpg",
-    "sale": false,
-    "availableSizes": [
-      "M",
-      "L"
-    ]
+    "sale": false
   },
   {
     "id": 64,
