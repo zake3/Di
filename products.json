@@ -1,5 +1,14 @@
 [
   {
+    "id": 64,
+    "name": "Шорты «Pure» белый",
+    "price": 6500,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/64-1784183303738.jpg",
+    "sale": false
+  },
+  {
     "id": 63,
     "name": "Шорты «Pure» телесный",
     "price": 6500,
