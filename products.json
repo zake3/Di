@@ -1,5 +1,14 @@
 [
   {
+    "id": 71,
+    "name": "Лосины «Noir» черные",
+    "price": 6500,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/71-1784199547445.jpg",
+    "sale": false
+  },
+  {
     "id": 70,
     "name": "Леггинсы \"Curve\" черные",
     "price": 7000,
