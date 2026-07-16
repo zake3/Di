@@ -1,5 +1,14 @@
 [
   {
+    "id": 61,
+    "name": "Шорты «Essential» черные",
+    "price": 4000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/61-1784182915699.jpg",
+    "sale": false
+  },
+  {
     "id": 60,
     "name": "Шорты «Essential» белый",
     "price": 4000,
