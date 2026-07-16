@@ -1,12 +1,16 @@
 [
   {
     "id": 65,
-    "name": "Шорты «Pure» черныЕ",
+    "name": "Шорты «Pure» черные",
     "price": 6500,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/65-1784183370681.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 64,
