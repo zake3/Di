@@ -1,5 +1,14 @@
 [
   {
+    "id": 87,
+    "name": "Комбез «Ruby»",
+    "price": 10000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/87-1784305056176.jpg",
+    "sale": false
+  },
+  {
     "id": 86,
     "name": "Комбез «Élite»",
     "price": 18000,
