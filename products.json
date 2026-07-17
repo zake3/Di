@@ -2,11 +2,15 @@
   {
     "id": 88,
     "name": "Комбез «Phoenix»",
-    "price": 165000,
+    "price": 16500,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/88-1784305135538.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "S",
+      "M"
+    ]
   },
   {
     "id": 87,
