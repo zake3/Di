@@ -1,5 +1,14 @@
 [
   {
+    "id": 82,
+    "name": "Комбинезон «Mystique»",
+    "price": 6500,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/82-1784303243357.jpg",
+    "sale": false
+  },
+  {
     "id": 81,
     "name": "Боди «Bordeaux»",
     "price": 8900,
