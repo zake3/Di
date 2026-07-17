@@ -1,5 +1,14 @@
 [
   {
+    "id": 79,
+    "name": "Черный топ «Midnight»",
+    "price": 5500,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/79-1784300885381.jpg",
+    "sale": false
+  },
+  {
     "id": 78,
     "name": "Белый топ с глубоким V-вырезом",
     "price": 5000,
