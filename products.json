@@ -1,5 +1,14 @@
 [
   {
+    "id": 81,
+    "name": "Боди «Bordeaux»",
+    "price": 8900,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/81-1784303000937.jpg",
+    "sale": false
+  },
+  {
     "id": 80,
     "name": "Белый топ «Selene»",
     "price": 4500,
