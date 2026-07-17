@@ -1,14 +1,5 @@
 [
   {
-    "id": 78,
-    "name": "Боди «Bordeaux»",
-    "price": 8900,
-    "cat": "Киім",
-    "emoji": "👗",
-    "img": "assets/products/78-1784300020242.jpg",
-    "sale": false
-  },
-  {
     "id": 77,
     "name": "Летние брюки черные",
     "price": 8900,
