@@ -1,5 +1,14 @@
 [
   {
+    "id": 90,
+    "name": "Комбез «Rose»",
+    "price": 12000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/90-1784305395386.jpg",
+    "sale": false
+  },
+  {
     "id": 89,
     "name": "Комбез «Rose Fit»",
     "price": 15000,
