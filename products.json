@@ -1,5 +1,14 @@
 [
   {
+    "id": 86,
+    "name": "Комбез «Élite»",
+    "price": 18000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/86-1784304691509.jpg",
+    "sale": false
+  },
+  {
     "id": 85,
     "name": "Комбинезон « Obsidian»",
     "price": 5500,
