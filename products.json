@@ -1,5 +1,14 @@
 [
   {
+    "id": 91,
+    "name": "Комбез «Truffle»",
+    "price": 10000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/91-1784305503947.jpg",
+    "sale": false
+  },
+  {
     "id": 90,
     "name": "Комбез «Rose»",
     "price": 12000,
