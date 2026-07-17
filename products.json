@@ -1,5 +1,14 @@
 [
   {
+    "id": 88,
+    "name": "Комбез «Phoenix»",
+    "price": 165000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/88-1784305135538.jpg",
+    "sale": false
+  },
+  {
     "id": 87,
     "name": "Комбез «Ruby»",
     "price": 10000,
