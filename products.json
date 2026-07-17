@@ -1,5 +1,14 @@
 [
   {
+    "id": 83,
+    "name": "Комбинезон «Inferno»",
+    "price": 9500,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/83-1784303477389.jpg",
+    "sale": false
+  },
+  {
     "id": 82,
     "name": "Комбинезон «Mystique»",
     "price": 6500,
