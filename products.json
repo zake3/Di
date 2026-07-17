@@ -1,5 +1,14 @@
 [
   {
+    "id": 84,
+    "name": "Комбинезон «Diamond»",
+    "price": 6000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/84-1784303581112.jpg",
+    "sale": false
+  },
+  {
     "id": 83,
     "name": "Комбинезон «Inferno»",
     "price": 9500,
