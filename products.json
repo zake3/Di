@@ -1,5 +1,14 @@
 [
   {
+    "id": 93,
+    "name": "Комбинезон «Amber»",
+    "price": 11000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/93-1784305661617.jpg",
+    "sale": false
+  },
+  {
     "id": 92,
     "name": "Комбез «Truffle» розовый",
     "price": 10000,
