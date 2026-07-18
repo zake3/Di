@@ -1,5 +1,14 @@
 [
   {
+    "id": 97,
+    "name": "Платье « Cherry Lace »",
+    "price": 8000,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/97-1784389239571.jpg",
+    "sale": false
+  },
+  {
     "id": 96,
     "name": "Топ «Veil» черный",
     "price": 4500,
