@@ -1,5 +1,14 @@
 [
   {
+    "id": 94,
+    "name": "Топ «Veil» розовый",
+    "price": 4500,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/94-1784388756266.jpg",
+    "sale": false
+  },
+  {
     "id": 93,
     "name": "Комбинезон «Amber»",
     "price": 11000,
