@@ -1,5 +1,14 @@
 [
   {
+    "id": 96,
+    "name": "Топ «Veil» черный",
+    "price": 4500,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/96-1784389141356.jpg",
+    "sale": false
+  },
+  {
     "id": 95,
     "name": "Топ «Veil» белый",
     "price": 4500,
