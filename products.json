@@ -1,5 +1,14 @@
 [
   {
+    "id": 98,
+    "name": "Платье « Rosé Candy»",
+    "price": 8500,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/98-1784389336345.jpg",
+    "sale": false
+  },
+  {
     "id": 97,
     "name": "Платье « Cherry Lace »",
     "price": 8000,
