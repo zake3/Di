@@ -14,8 +14,13 @@
     "price": 4500,
     "cat": "Киім",
     "emoji": "👗",
-    "img": "assets/products/94-1784388756266.jpg",
-    "sale": false
+    "img": "assets/products/94-1784389031887.jpg",
+    "sale": false,
+    "availableSizes": [
+      "S",
+      "M",
+      "L"
+    ]
   },
   {
     "id": 93,
