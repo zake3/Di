@@ -1,5 +1,14 @@
 [
   {
+    "id": 107,
+    "name": "Crystal розовый",
+    "price": 30000,
+    "cat": "Аяқ киім",
+    "emoji": "👗",
+    "img": "assets/products/107-1784486207761.jpg",
+    "sale": false
+  },
+  {
     "id": 106,
     "name": "Allure",
     "price": 15000,
