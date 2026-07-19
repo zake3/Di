@@ -1,5 +1,14 @@
 [
   {
+    "id": 111,
+    "name": "Ruby кожаный черно-белый",
+    "price": 40000,
+    "cat": "Аяқ киім",
+    "emoji": "👗",
+    "img": "assets/products/111-1784486584959.jpg",
+    "sale": false
+  },
+  {
     "id": 110,
     "name": "Ruby велюровый красный",
     "price": 40000,
