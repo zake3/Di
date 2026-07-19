@@ -1,5 +1,14 @@
 [
   {
+    "id": 105,
+    "name": "Mamba",
+    "price": 28000,
+    "cat": "Аяқ киім",
+    "emoji": "👗",
+    "img": "assets/products/105-1784485978299.jpg",
+    "sale": false
+  },
+  {
     "id": 104,
     "name": "Venom Lace",
     "price": 23000,
