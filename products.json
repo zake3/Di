@@ -1,5 +1,14 @@
 [
   {
+    "id": 103,
+    "name": "Velvet danger",
+    "price": 20000,
+    "cat": "Аяқ киім",
+    "emoji": "👗",
+    "img": "assets/products/103-1784485672230.jpg",
+    "sale": false
+  },
+  {
     "id": 102,
     "name": "Obsession",
     "price": 19000,
