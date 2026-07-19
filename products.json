@@ -1,5 +1,14 @@
 [
   {
+    "id": 100,
+    "name": "Комбинезон «Dangerous»",
+    "price": 8500,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/100-1784484002790.jpg",
+    "sale": false
+  },
+  {
     "id": 99,
     "name": "Платье « Secret Night »",
     "price": 10000,
