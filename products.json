@@ -1,5 +1,14 @@
 [
   {
+    "id": 104,
+    "name": "Venom Lace",
+    "price": 23000,
+    "cat": "Аяқ киім",
+    "emoji": "👗",
+    "img": "assets/products/104-1784485824715.jpg",
+    "sale": false
+  },
+  {
     "id": 103,
     "name": "Velvet danger",
     "price": 20000,
