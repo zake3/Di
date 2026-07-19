@@ -1,5 +1,14 @@
 [
   {
+    "id": 113,
+    "name": "Fatal femme",
+    "price": 40000,
+    "cat": "Аяқ киім",
+    "emoji": "👗",
+    "img": "assets/products/113-1784486852652.jpg",
+    "sale": false
+  },
+  {
     "id": 112,
     "name": "Ruby кожаный черно-красный",
     "price": 40000,
