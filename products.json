@@ -78,7 +78,10 @@
     "cat": "Аяқ киім",
     "emoji": "👗",
     "img": "assets/products/109-1784486355244.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "38"
+    ]
   },
   {
     "id": 108,
