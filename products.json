@@ -182,11 +182,17 @@
   {
     "id": 98,
     "name": "Платье « Rosé Candy»",
-    "price": 8500,
+    "price": 7000,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/98-1784389336345.jpg",
-    "sale": false
+    "sale": true,
+    "availableSizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ]
   },
   {
     "id": 97,
