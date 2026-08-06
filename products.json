@@ -367,11 +367,15 @@
   {
     "id": 81,
     "name": "Боди «Bordeaux»",
-    "price": 8900,
+    "price": 11000,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/81-1784303000937.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 80,
