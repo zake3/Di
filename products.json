@@ -191,11 +191,15 @@
   {
     "id": 97,
     "name": "Платье « Cherry Lace »",
-    "price": 8000,
+    "price": 6000,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/97-1784389239571.jpg",
-    "sale": false
+    "sale": true,
+    "availableSizes": [
+      "XS",
+      "S"
+    ]
   },
   {
     "id": 96,
