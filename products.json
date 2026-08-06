@@ -614,11 +614,18 @@
   {
     "id": 54,
     "name": "Рукава голубые",
-    "price": 1000,
+    "price": 3000,
     "cat": "Лонгслив",
     "emoji": "👗",
     "img": "assets/products/54-1784153170135.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
   },
   {
     "id": 53,
