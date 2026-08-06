@@ -344,11 +344,16 @@
   {
     "id": 83,
     "name": "Комбинезон «Inferno»",
-    "price": 9500,
+    "price": 8500,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/83-1784303477389.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "S",
+      "M",
+      "L"
+    ]
   },
   {
     "id": 82,
