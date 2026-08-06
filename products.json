@@ -242,11 +242,15 @@
   {
     "id": 93,
     "name": "Комбинезон «Amber»",
-    "price": 11000,
+    "price": 9500,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/93-1784305661617.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 92,
