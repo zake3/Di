@@ -322,11 +322,15 @@
   {
     "id": 85,
     "name": "Комбинезон « Obsidian»",
-    "price": 5500,
+    "price": 7500,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/85-1784304041803.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 84,
