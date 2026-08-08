@@ -666,12 +666,20 @@
   },
   {
     "id": 50,
-    "name": "Guard надкаблучники",
-    "price": 1000,
-    "cat": "Аяқ киім",
+    "name": "Guard накаблучники",
+    "price": 2990,
+    "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/50-1784152613577.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ]
   },
   {
     "id": 49,
