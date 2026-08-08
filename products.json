@@ -734,11 +734,14 @@
   {
     "id": 44,
     "name": "Наколенники черные",
-    "price": 2000,
+    "price": 3000,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/44-1783852893906.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "L"
+    ]
   },
   {
     "id": 43,
