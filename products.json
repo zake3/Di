@@ -317,11 +317,15 @@
   {
     "id": 86,
     "name": "Комбез «Élite»",
-    "price": 18000,
+    "price": 17990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/86-1784304691509.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 85,
