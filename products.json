@@ -148,11 +148,19 @@
   {
     "id": 103,
     "name": "Velvet danger",
-    "price": 20000,
+    "price": 19990,
     "cat": "Аяқ киім",
     "emoji": "👗",
     "img": "assets/products/103-1784485672230.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ]
   },
   {
     "id": 102,
