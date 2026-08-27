@@ -29,11 +29,17 @@
   {
     "id": 115,
     "name": "Ботфорты коричневые",
-    "price": 30000,
+    "price": 39990,
     "cat": "Аяқ киім",
     "emoji": "👗",
     "img": "assets/products/115-1784487287336.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ]
   },
   {
     "id": 114,
