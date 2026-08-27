@@ -178,11 +178,19 @@
   {
     "id": 102,
     "name": "Obsession",
-    "price": 19000,
+    "price": 18990,
     "cat": "Аяқ киім",
     "emoji": "👗",
     "img": "assets/products/102-1784485157900.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ]
   },
   {
     "id": 101,
