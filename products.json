@@ -14,11 +14,17 @@
   {
     "id": 116,
     "name": "Ботфорты черные",
-    "price": 30000,
+    "price": 39990,
     "cat": "Аяқ киім",
     "emoji": "👗",
     "img": "assets/products/116-1784487359620.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ]
   },
   {
     "id": 115,
