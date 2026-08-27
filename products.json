@@ -147,11 +147,16 @@
   {
     "id": 104,
     "name": "Venom Lace",
-    "price": 23000,
+    "price": 22990,
     "cat": "Аяқ киім",
     "emoji": "👗",
     "img": "assets/products/104-1784485824715.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "36",
+      "37",
+      "38"
+    ]
   },
   {
     "id": 103,
