@@ -125,11 +125,16 @@
   {
     "id": 106,
     "name": "Allure",
-    "price": 15000,
+    "price": 14990,
     "cat": "Аяқ киім",
     "emoji": "👗",
     "img": "assets/products/106-1784486100454.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "36",
+      "37",
+      "38"
+    ]
   },
   {
     "id": 105,
