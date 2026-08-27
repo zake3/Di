@@ -98,11 +98,17 @@
   {
     "id": 110,
     "name": "Ruby велюровый красный",
-    "price": 40000,
+    "price": 44990,
     "cat": "Аяқ киім",
     "emoji": "👗",
     "img": "assets/products/110-1784486507751.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ]
   },
   {
     "id": 109,
