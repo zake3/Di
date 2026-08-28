@@ -1,5 +1,14 @@
 [
   {
+    "id": 128,
+    "name": "Колготки «Vixen»",
+    "price": 1990,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/128-1787949708602.jpg",
+    "sale": false
+  },
+  {
     "id": 127,
     "name": "Топ с крючками",
     "price": 9990,
