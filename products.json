@@ -1,12 +1,18 @@
 [
   {
     "id": 129,
-    "name": "Колготки «Крестик»",
+    "name": "Колготки «Крестики»",
     "price": 1990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/129-1787949954406.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ]
   },
   {
     "id": 128,
