@@ -1,5 +1,14 @@
 [
   {
+    "id": 124,
+    "name": "Шорты «Cut»",
+    "price": 7990,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/124-1787947052192.jpg",
+    "sale": false
+  },
+  {
     "id": 123,
     "name": "Майка-крокодил красная",
     "price": 7990,
