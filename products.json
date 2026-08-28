@@ -1,5 +1,14 @@
 [
   {
+    "id": 125,
+    "name": "Шорты-стринги",
+    "price": 7990,
+    "cat": "Киім",
+    "emoji": "👗",
+    "img": "assets/products/125-1787948169762.jpg",
+    "sale": false
+  },
+  {
     "id": 124,
     "name": "Шорты «Cut»",
     "price": 7990,
