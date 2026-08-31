@@ -1005,11 +1005,19 @@
   {
     "id": 43,
     "name": "Наколенники «Черепашка»",
-    "price": 2000,
+    "price": 2990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/43-1783852581304.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
   },
   {
     "id": 42,
