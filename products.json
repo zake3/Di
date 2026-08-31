@@ -589,11 +589,17 @@
   {
     "id": 82,
     "name": "Комбинезон «Mystique»",
-    "price": 6500,
+    "price": 6490,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/82-1784303243357.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ]
   },
   {
     "id": 81,
