@@ -555,12 +555,16 @@
   {
     "id": 84,
     "name": "Комбинезон «Diamond»",
-    "price": 6000,
+    "price": 5990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/84-1784303581112.jpg",
     "sale": false,
-    "availableSizes": []
+    "availableSizes": [
+      "S",
+      "M",
+      "L"
+    ]
   },
   {
     "id": 83,
