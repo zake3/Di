@@ -349,11 +349,19 @@
   {
     "id": 100,
     "name": "Комбинезон «Dangerous»",
-    "price": 8500,
+    "price": 8490,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/100-1784484002790.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
   },
   {
     "id": 99,
