@@ -781,11 +781,15 @@
   {
     "id": 62,
     "name": "Шорты «V Shape»",
-    "price": 5000,
+    "price": 4999,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/62-1784182982350.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 61,
