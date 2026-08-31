@@ -458,11 +458,15 @@
   {
     "id": 91,
     "name": "Комбез «Truffle»",
-    "price": 10000,
+    "price": 9990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/91-1784305503947.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 90,
