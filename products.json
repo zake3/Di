@@ -860,11 +860,18 @@
   {
     "id": 52,
     "name": "Рукава белые",
-    "price": 3000,
+    "price": 3990,
     "cat": "Лонгслив",
     "emoji": "👗",
     "img": "assets/products/52-1784153047772.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
   },
   {
     "id": 51,
