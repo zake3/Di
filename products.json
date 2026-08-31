@@ -627,11 +627,15 @@
   {
     "id": 78,
     "name": "Белый топ с глубоким V-вырезом",
-    "price": 5000,
+    "price": 4990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/78-1784300714354.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 77,
