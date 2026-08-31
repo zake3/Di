@@ -900,11 +900,15 @@
   {
     "id": 57,
     "name": "Шорты базовые розовые",
-    "price": 4000,
+    "price": 3990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/57-1784153595462.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 56,
