@@ -742,11 +742,16 @@
   {
     "id": 68,
     "name": "Леггинсы «Viper» черные",
-    "price": 8500,
+    "price": 8490,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/68-1784184629965.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "S",
+      "M",
+      "L"
+    ]
   },
   {
     "id": 67,
