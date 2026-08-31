@@ -886,11 +886,16 @@
   {
     "id": 58,
     "name": "Шорты базовые черные",
-    "price": 4000,
+    "price": 3990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/58-1784182645573.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L",
+      "XL"
+    ]
   },
   {
     "id": 57,
