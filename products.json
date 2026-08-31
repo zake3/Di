@@ -444,11 +444,16 @@
   {
     "id": 92,
     "name": "Комбез «Truffle» розовый",
-    "price": 10000,
+    "price": 9990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/92-1784305575006.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "S",
+      "M",
+      "L"
+    ]
   },
   {
     "id": 91,
