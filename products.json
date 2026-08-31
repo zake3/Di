@@ -340,11 +340,18 @@
   {
     "id": 101,
     "name": "Snake Skin Mesh",
-    "price": 15000,
+    "price": 14990,
     "cat": "Аяқ киім",
     "emoji": "👗",
     "img": "assets/products/101-1784484823981.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ]
   },
   {
     "id": 100,
