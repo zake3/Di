@@ -676,11 +676,17 @@
   {
     "id": 73,
     "name": "Прозрачные брюки-клёш черные",
-    "price": 8000,
+    "price": 7990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/73-1784298830571.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
   },
   {
     "id": 72,
