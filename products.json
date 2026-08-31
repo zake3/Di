@@ -1022,11 +1022,19 @@
   {
     "id": 42,
     "name": "Гетры 70 см",
-    "price": 3000,
+    "price": 2990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/42-1783852373042.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
   },
   {
     "id": 41,
