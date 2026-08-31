@@ -1039,11 +1039,19 @@
   {
     "id": 48,
     "name": "Сумка «Blush Python»",
-    "price": 7500,
+    "price": 9990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/48-1783866272547.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
   },
   {
     "id": 47,
