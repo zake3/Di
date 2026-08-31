@@ -835,11 +835,15 @@
   {
     "id": 56,
     "name": "Шорты « X-Strap »",
-    "price": 2000,
+    "price": 3990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/56-1784153522999.jpg",
-    "sale": true
+    "sale": true,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 55,
