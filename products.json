@@ -399,11 +399,17 @@
   {
     "id": 96,
     "name": "Топ «Veil» черный",
-    "price": 4500,
+    "price": 4490,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/96-1784389141356.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ]
   },
   {
     "id": 95,
