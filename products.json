@@ -726,11 +726,16 @@
   {
     "id": 71,
     "name": "Лосины «Noir» черные",
-    "price": 6500,
+    "price": 6490,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/71-1784199547445.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "S",
+      "M",
+      "L"
+    ]
   },
   {
     "id": 70,
