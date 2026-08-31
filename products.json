@@ -358,23 +358,19 @@
   {
     "id": 99,
     "name": "Платье « Secret Night »",
-    "price": 11990,
+    "price": 10000,
     "cat": "Киім",
     "emoji": "👗",
-    "img": "assets/products/99-1788158538313.jpg",
-    "sale": false,
-    "availableSizes": [
-      "M",
-      "L"
-    ]
+    "img": "assets/products/99-1784483481511.jpg",
+    "sale": false
   },
   {
     "id": 98,
     "name": "Платье « Rosé Candy»",
-    "price": 6990,
+    "price": 7000,
     "cat": "Киім",
     "emoji": "👗",
-    "img": "assets/products/98-1788158682185.jpg",
+    "img": "assets/products/98-1784389336345.jpg",
     "sale": true,
     "availableSizes": [
       "XS",
@@ -471,19 +467,11 @@
   {
     "id": 89,
     "name": "Комбез «Rose Fit»",
-    "price": 14990,
+    "price": 15000,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/89-1784305284676.jpg",
-    "sale": false,
-    "availableSizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ]
+    "sale": false
   },
   {
     "id": 88,
@@ -822,13 +810,18 @@
     "price": 5500,
     "cat": "Киім",
     "emoji": "👗",
-    "img": "assets/products/55-1784153331377.jpg",
-    "sale": false
+    "img": "assets/products/55-1788171200068.jpg",
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L",
+      "XL"
+    ]
   },
   {
     "id": 54,
     "name": "Рукава голубые",
-    "price": 3990,
+    "price": 3000,
     "cat": "Лонгслив",
     "emoji": "👗",
     "img": "assets/products/54-1784153170135.jpg",
@@ -844,7 +837,7 @@
   {
     "id": 53,
     "name": "Рукава черные",
-    "price": 3990,
+    "price": 3000,
     "cat": "Лонгслив",
     "emoji": "👗",
     "img": "assets/products/53-1784153107102.jpg",
@@ -860,34 +853,20 @@
   {
     "id": 52,
     "name": "Рукава белые",
-    "price": 3990,
+    "price": 3000,
     "cat": "Лонгслив",
     "emoji": "👗",
     "img": "assets/products/52-1784153047772.jpg",
-    "sale": false,
-    "availableSizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ]
+    "sale": false
   },
   {
     "id": 51,
     "name": "Рукава розовые",
-    "price": 3990,
+    "price": 3000,
     "cat": "Лонгслив",
     "emoji": "👗",
     "img": "assets/products/51-1784152974234.jpg",
-    "sale": false,
-    "availableSizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ]
+    "sale": false
   },
   {
     "id": 50,
@@ -927,26 +906,25 @@
   {
     "id": 47,
     "name": "Наколенники гелевые телесные",
-    "price": 4990,
+    "price": 5000,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/47-1783853498390.jpg",
     "sale": false,
     "availableSizes": [
-      "M"
+      "S",
+      "M",
+      "L"
     ]
   },
   {
     "id": 46,
     "name": "Наколенники бежевые",
-    "price": 3990,
+    "price": 4000,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/46-1783853362432.jpg",
-    "sale": false,
-    "availableSizes": [
-      "M"
-    ]
+    "sale": false
   },
   {
     "id": 45,
@@ -960,7 +938,7 @@
   {
     "id": 44,
     "name": "Наколенники черные",
-    "price": 2990,
+    "price": 3000,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/44-1783852893906.jpg",
@@ -981,18 +959,11 @@
   {
     "id": 42,
     "name": "Гетры 70 см",
-    "price": 2990,
+    "price": 3000,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/42-1783852373042.jpg",
-    "sale": false,
-    "availableSizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ]
+    "sale": false
   },
   {
     "id": 41,
