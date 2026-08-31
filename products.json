@@ -927,15 +927,13 @@
   {
     "id": 47,
     "name": "Наколенники гелевые телесные",
-    "price": 5000,
+    "price": 4990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/47-1783853498390.jpg",
     "sale": false,
     "availableSizes": [
-      "S",
-      "M",
-      "L"
+      "M"
     ]
   },
   {
