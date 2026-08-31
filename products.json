@@ -997,11 +997,16 @@
   {
     "id": 46,
     "name": "Наколенники бежевые",
-    "price": 4000,
+    "price": 3999,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/46-1783853362432.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "S",
+      "M",
+      "L"
+    ]
   },
   {
     "id": 45,
