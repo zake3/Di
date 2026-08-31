@@ -786,11 +786,15 @@
   {
     "id": 66,
     "name": "Шорты «Cloud» черные",
-    "price": 4000,
+    "price": 3990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/66-1784184030295.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 65,
