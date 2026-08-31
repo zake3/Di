@@ -777,11 +777,15 @@
   {
     "id": 67,
     "name": "Шорты «Cloud» белые",
-    "price": 4000,
+    "price": 3990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/67-1784184164362.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 66,
