@@ -910,11 +910,18 @@
   {
     "id": 51,
     "name": "Рукава розовые",
-    "price": 3000,
+    "price": 3990,
     "cat": "Лонгслив",
     "emoji": "👗",
     "img": "assets/products/51-1784152974234.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
   },
   {
     "id": 50,
