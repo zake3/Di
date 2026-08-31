@@ -872,11 +872,16 @@
   {
     "id": 59,
     "name": "Шорты базовые белые",
-    "price": 4000,
+    "price": 3990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/59-1784182720401.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L",
+      "XL"
+    ]
   },
   {
     "id": 58,
