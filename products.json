@@ -814,11 +814,17 @@
   {
     "id": 60,
     "name": "Шорты «Essential» белый",
-    "price": 4000,
+    "price": 4990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/60-1784182780864.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
   },
   {
     "id": 59,
