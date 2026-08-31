@@ -800,11 +800,16 @@
   {
     "id": 61,
     "name": "Шорты «Essential» черные",
-    "price": 4000,
+    "price": 4990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/61-1784182915699.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L",
+      "XL"
+    ]
   },
   {
     "id": 60,
