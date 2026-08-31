@@ -758,11 +758,16 @@
   {
     "id": 69,
     "name": "Леггинсы- клеш «Sculpt» черные",
-    "price": 7500,
+    "price": 8990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/69-1784184896724.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L",
+      "XL"
+    ]
   },
   {
     "id": 68,
