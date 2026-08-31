@@ -484,11 +484,17 @@
   {
     "id": 89,
     "name": "Комбез «Rose Fit»",
-    "price": 15000,
+    "price": 14990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/89-1784305284676.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
   },
   {
     "id": 88,
