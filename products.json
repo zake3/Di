@@ -471,11 +471,15 @@
   {
     "id": 90,
     "name": "Комбез «Rose»",
-    "price": 12000,
+    "price": 11990,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/90-1784305395386.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 89,
