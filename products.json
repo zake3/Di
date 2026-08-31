@@ -657,7 +657,10 @@
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/77-1784299653284.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M"
+    ]
   },
   {
     "id": 76,
