@@ -745,11 +745,15 @@
   {
     "id": 70,
     "name": "Леггинсы \"Curve\" черные",
-    "price": 7000,
+    "price": 7790,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/70-1784185307720.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 69,
