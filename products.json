@@ -358,11 +358,15 @@
   {
     "id": 99,
     "name": "Платье « Secret Night »",
-    "price": 10000,
+    "price": 11990,
     "cat": "Киім",
     "emoji": "👗",
-    "img": "assets/products/99-1784483481511.jpg",
-    "sale": false
+    "img": "assets/products/99-1788173517101.jpg",
+    "sale": false,
+    "availableSizes": [
+      "M",
+      "L"
+    ]
   },
   {
     "id": 98,
