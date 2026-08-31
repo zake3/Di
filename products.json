@@ -717,11 +717,16 @@
   {
     "id": 72,
     "name": "Лосины «Noir» серые",
-    "price": 6500,
+    "price": 6490,
     "cat": "Киім",
     "emoji": "👗",
     "img": "assets/products/72-1784273650693.jpg",
-    "sale": false
+    "sale": false,
+    "availableSizes": [
+      "S",
+      "M",
+      "L"
+    ]
   },
   {
     "id": 71,
