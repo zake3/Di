@@ -1,5 +1,14 @@
 [
   {
+    "id": 133,
+    "name": "Колготки •velvet•",
+    "price": 1990,
+    "cat": "Аяқ киім",
+    "emoji": "👗",
+    "img": "assets/products/133-1789905669998.jpg",
+    "sale": false
+  },
+  {
     "id": 132,
     "name": "Колготки «Паук»",
     "price": 1990,
