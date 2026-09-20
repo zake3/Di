@@ -1,5 +1,14 @@
 [
   {
+    "id": 132,
+    "name": "Колготки «Паук»",
+    "price": 1990,
+    "cat": "Аяқ киім",
+    "emoji": "👗",
+    "img": "assets/products/132-1789904637016.jpg",
+    "sale": false
+  },
+  {
     "id": 131,
     "name": "Колготки «Halas»",
     "price": 1990,
