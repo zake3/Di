@@ -1,5 +1,14 @@
 [
   {
+    "id": 130,
+    "name": "Колготки “Spider”",
+    "price": 1990,
+    "cat": "Аяқ киім",
+    "emoji": "👗",
+    "img": "assets/products/130-1789904033703.jpg",
+    "sale": false
+  },
+  {
     "id": 129,
     "name": "Колготки «Крестики»",
     "price": 1990,
